@@ -4,4 +4,20 @@
   text-decoration: none;
   font-style: normal;
   font-weight: normal;
+  font-size: 16px;
+  letter-spacing: 0.3px;
+}
+
+h1 {
+  font-size: 16px;
+  font-size: 30px;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
 }

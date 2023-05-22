@@ -6,17 +6,15 @@ import {
 } from '@ant-design/icons';
 import { Button, Layout, Menu } from 'antd';
 import { useState } from 'react';
-import State from '../../Components/State/State';
-import Effect from '../../Components/Effect/Effect';
-import About from '../../Components/About/About';
-import NotFound from '../../Components/NotFound/NotFound';
+import ContentSide from '../../Components/ContentSide/ContentSide';
 import style from './style.module.scss';
 
 const { Header, Sider, Content } = Layout;
 
 const Home = () => {
     const [collapsed, setCollapsed] = useState(false);
-    const [content, setContent] = useState(<About />);
+    const [content, setContent] = useState(<ContentSide eventKey={"1"} />);
+    
     const items = [
         {
             key: '1',
@@ -53,35 +51,15 @@ const Home = () => {
             icon: <CodeSandboxCircleFilled />,
             label: 'useMemo',
         },
+        {
+            key: '8',
+            icon: <ReadOutlined />,
+            label: 'Заключение',
+        },
     ];
 
     const changeContent = (e) => {
-        switch (e?.key) {
-            case '1':
-                setContent(<About />);
-                break;
-            case '2':
-                setContent(<State />);
-                break;
-            case '3':
-                setContent(<Effect />);
-                break;
-            case '4':
-                setContent(<NotFound />);
-                break;
-            case '5':
-                setContent(<NotFound />);
-                break;
-            case '6':
-                setContent(<NotFound />);
-                break;
-            case '7':
-                setContent(<NotFound />);
-                break;
-            default:
-                setContent(<NotFound />);
-                break;
-        }
+        setContent(<ContentSide eventKey={e?.key} />);
     };
 
     return (
