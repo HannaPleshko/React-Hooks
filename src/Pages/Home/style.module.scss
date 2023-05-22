@@ -1,0 +1,39 @@
+.wrapper {
+    height: 100vh;
+
+    .demo-logo {
+        background-image: url(./assets/HS.png);
+        background-repeat: no-repeat;
+        width: 110px;
+        height: 70px;
+        background-size: contain;
+        margin: 20px auto;
+    }
+
+    .hidd-logo {
+        background-image: url(./assets/HS_hidden.png);
+        background-repeat: no-repeat;
+        width: 50px;
+        height: 50px;
+        background-size: contain;
+        margin: 5px auto;
+    }
+
+    .header {
+        background-color: #fff;
+        padding: 0;
+
+        button {
+           font-size: 16px;
+           width: 64px; 
+           height: 64px;
+        }
+    }
+
+    .content {
+        padding: 24px;
+        background-color: #fff;
+        min-height: 280px;
+        margin: 24px 16px;
+    }
+}
