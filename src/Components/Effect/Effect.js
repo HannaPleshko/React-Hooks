@@ -1,11 +1,7 @@
 import React from 'react';
 
 function Effect() {
-    return (
-        <>
-        Effect
-        </>
-    );
+  return <>Effect</>;
 }
 
 export default Effect;
